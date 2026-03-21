@@ -987,83 +987,63 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Testimonials Section
+# Awards Section
 --------------------------------------------------------------*/
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
+.awards .swiper {
   overflow: hidden;
 }
 
-.testimonials .testimonial-item .testimonial-content {
+.awards .award-item .award-content {
   border-left: 3px solid var(--accent-color);
   padding-left: 30px;
 }
 
-.testimonials .testimonial-item .testimonial-img {
-  border-radius: 50%;
+.awards .award-item .award-img {
+  border-radius: 16px;
   border: 4px solid var(--background-color);
   margin: 0 auto;
 }
 
-.testimonials .testimonial-item h3 {
+.awards .award-item h3 {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
 }
 
-.testimonials .testimonial-item h4 {
+.awards .award-item .award-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
 }
 
-.testimonials .testimonial-item .stars i {
+.awards .award-item .award-meta i {
   color: #ffc107;
-  margin: 0 1px;
 }
 
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
-  font-size: 26px;
-  line-height: 0;
+.awards .award-item p {
+  font-style: normal;
 }
 
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-}
-
-.testimonials .swiper-wrapper {
+.awards .swiper-wrapper {
   height: auto;
 }
 
-.testimonials .swiper-pagination {
+.awards .swiper-pagination {
   margin-top: 30px;
   position: relative;
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet {
+.awards .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+.awards .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
