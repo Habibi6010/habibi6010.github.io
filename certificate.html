@@ -5,42 +5,164 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Certificates - Mostafa Habibi</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Professional certificates earned by Mostafa Habibi in AI, data science, agentic systems, and AWS." name="description">
+  <meta content="Mostafa Habibi, certificates, DataCamp, Coursera, AWS, AI, Data Science" name="keywords">
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/css/certificate.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .certificates-page .page-title {
+      padding-bottom: 20px;
+    }
+
+    .section-subtitle {
+      max-width: 780px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .stats-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 28px 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      height: 100%;
+      text-align: center;
+      border: 1px solid rgba(39, 40, 51, 0.06);
+    }
+
+    .stats-number {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent-color, #149ddd);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .stats-label {
+      margin: 0;
+      color: #444;
+      font-weight: 500;
+    }
+
+    .platform-block {
+      margin-bottom: 64px;
+    }
+
+    .platform-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .platform-title h3 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .platform-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(20, 157, 221, 0.08);
+      color: var(--accent-color, #149ddd);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .certificate-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 26px 24px;
+      height: 100%;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(39, 40, 51, 0.06);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .certificate-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .cert-icon {
+      font-size: 1.9rem;
+      color: var(--accent-color, #149ddd);
+      margin-bottom: 18px;
+    }
+
+    .certificate-card h4 {
+      font-size: 1.15rem;
+      line-height: 1.45;
+      margin-bottom: 12px;
+      min-height: 3.3rem;
+    }
+
+    .certificate-card p {
+      color: #555;
+      margin-bottom: 16px;
+      flex-grow: 1;
+    }
+
+    .cert-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .cert-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: #f4f7fb;
+      color: #444;
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+
+    .cert-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      .certificate-card h4 {
+        min-height: auto;
+      }
+
+    }
+  </style>
 </head>
 
 <body class="starter-page-page certificates-page">
 
   <header id="header" class="header d-flex flex-column justify-content-center">
-
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <nav id="navmenu" class="navmenu">
@@ -48,16 +170,13 @@
         <li><a href="index.html"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
         <li><a href="#certificate-overview" class="active"><i class="bi bi-award navicon"></i><span>Overview</span></a></li>
         <li><a href="#coursera"><i class="bi bi-mortarboard navicon"></i><span>Coursera</span></a></li>
-        <li><a href="#datacamp"><i class="bi bi-bar-chart-line navicon"></i><span>DataCamp</span></a></li>
-        <li><a href="#amazon"><i class="bi bi-box-seam navicon"></i><span>Amazon</span></a></li>
+        <li><a href="#datacamp"><i class="bi bi-diagram-3 navicon"></i><span>DataCamp</span></a></li>
+        <li><a href="#aws"><i class="bi bi-cloud-check navicon"></i><span>AWS</span></a></li>
       </ul>
     </nav>
-
   </header>
 
   <main class="main">
-
-    <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="container">
         <nav class="breadcrumbs">
@@ -68,16 +187,15 @@
         </nav>
         <h1>Certificates</h1>
       </div>
-    </div><!-- End Page Title -->
+    </div>
 
-    <!-- Certificates Overview -->
     <section id="certificate-overview" class="certificates-overview section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Learning Certificates</h2>
-        <p>A curated list of professional certificates completed across Coursera, DataCamp, and Amazon learning tracks.</p>
-      </div><!-- End Section Title -->
+        <h2>Professional Learning Certificates</h2>
+        <p class="section-subtitle">
+          Verified certificates across generative AI, agentic systems, data science, and cloud AI. Each item includes a direct button to preview the certificate.
+        </p>
+      </div>
 
       <div class="container">
         <div class="row g-4">
@@ -96,17 +214,14 @@
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
             <div class="stats-card">
               <span class="stats-number">1</span>
-              <p class="stats-label">Amazon Certificate</p>
+              <p class="stats-label">AWS Certificate</p>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-    </section><!-- /Certificates Overview -->
-
-    <!-- Certificates List -->
     <section id="certificates-list" class="certificates-list section light-background">
-
       <div class="container" data-aos="fade-up">
 
         <div id="coursera" class="platform-block">
@@ -114,37 +229,65 @@
             <h3>Coursera</h3>
             <span class="platform-count">4 Certificates</span>
           </div>
+
           <div class="row g-4">
             <div class="col-lg-3 col-md-6">
               <article class="certificate-card">
                 <i class="bi bi-patch-check-fill cert-icon"></i>
-                <h4>Coursera Certificate 01</h4>
-                <p>Completed through Coursera online learning platform.</p>
-                <div class="cert-meta">Provider: Coursera</div>
+                <h4>Introduction to Generative AI Learning Path</h4>
+                <p>Google Cloud specialization covering generative AI, large language models, and responsible AI foundations.</p>
+                <div class="cert-meta">
+                  <span class="cert-badge"><i class="bi bi-building"></i> Coursera / Google Cloud</span>
+                  <span class="cert-badge"><i class="bi bi-calendar-event"></i> Nov 24, 2024</span>
+                </div>
+                <div class="cert-actions">
+                  <a class="btn-paper" href="assets/certificates/coursera-introduction-to-generative-ai-learning-path.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                </div>
               </article>
             </div>
+
             <div class="col-lg-3 col-md-6">
               <article class="certificate-card">
                 <i class="bi bi-patch-check-fill cert-icon"></i>
-                <h4>Coursera Certificate 02</h4>
-                <p>Completed through Coursera online learning platform.</p>
-                <div class="cert-meta">Provider: Coursera</div>
+                <h4>Python for Data Science and AI</h4>
+                <p>IBM-authorized Coursera credential focused on Python fundamentals for data science and applied AI workflows.</p>
+                <div class="cert-meta">
+                  <span class="cert-badge"><i class="bi bi-building"></i> Coursera / IBM</span>
+                  <span class="cert-badge"><i class="bi bi-calendar-event"></i> Dec 30, 2022</span>
+                </div>
+                <div class="cert-actions">
+                  <a class="btn-paper" href="assets/certificates/coursera-python-for-data-science-and-ai.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                </div>
               </article>
             </div>
+
             <div class="col-lg-3 col-md-6">
               <article class="certificate-card">
                 <i class="bi bi-patch-check-fill cert-icon"></i>
-                <h4>Coursera Certificate 03</h4>
-                <p>Completed through Coursera online learning platform.</p>
-                <div class="cert-meta">Provider: Coursera</div>
+                <h4>Introduction to Data Science</h4>
+                <p>Foundational specialization covering data science concepts, tools, methodology, and SQL for data analysis.</p>
+                <div class="cert-meta">
+                  <span class="cert-badge"><i class="bi bi-building"></i> Coursera / IBM</span>
+                  <span class="cert-badge"><i class="bi bi-calendar-event"></i> Feb 22, 2023</span>
+                </div>
+                <div class="cert-actions">
+                  <a class="btn-paper" href="assets/certificates/coursera-introduction-to-data-science.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                </div>
               </article>
             </div>
+
             <div class="col-lg-3 col-md-6">
               <article class="certificate-card">
                 <i class="bi bi-patch-check-fill cert-icon"></i>
-                <h4>Coursera Certificate 04</h4>
-                <p>Completed through Coursera online learning platform.</p>
-                <div class="cert-meta">Provider: Coursera</div>
+                <h4>IBM Data Science</h4>
+                <p>Comprehensive professional certificate in data science, machine learning, Python, SQL, visualization, and capstone work.</p>
+                <div class="cert-meta">
+                  <span class="cert-badge"><i class="bi bi-building"></i> Coursera / IBM</span>
+                  <span class="cert-badge"><i class="bi bi-calendar-event"></i> May 19, 2023</span>
+                </div>
+                <div class="cert-actions">
+                  <a class="btn-paper" href="assets/certificates/coursera-ibm-data-science.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                </div>
               </article>
             </div>
           </div>
@@ -155,76 +298,117 @@
             <h3>DataCamp</h3>
             <span class="platform-count">5 Certificates</span>
           </div>
+
           <div class="row g-4">
             <div class="col-lg-4 col-md-6">
               <article class="certificate-card">
                 <i class="bi bi-patch-check-fill cert-icon"></i>
-                <h4>DataCamp Certificate 01</h4>
-                <p>Completed through DataCamp online learning platform.</p>
-                <div class="cert-meta">Provider: DataCamp</div>
+                <h4>Introduction to AI Agents</h4>
+                <p>Introductory certificate on the design, role, and operation of AI agents in modern AI systems.</p>
+                <div class="cert-meta">
+                  <span class="cert-badge"><i class="bi bi-building"></i> DataCamp</span>
+                  <span class="cert-badge"><i class="bi bi-calendar-event"></i> Feb 18, 2026</span>
+                </div>
+                <div class="cert-actions">
+                  <a class="btn-paper" href="assets/certificates/datacamp-introduction-to-ai-agents.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                </div>
               </article>
             </div>
+
             <div class="col-lg-4 col-md-6">
               <article class="certificate-card">
                 <i class="bi bi-patch-check-fill cert-icon"></i>
-                <h4>DataCamp Certificate 02</h4>
-                <p>Completed through DataCamp online learning platform.</p>
-                <div class="cert-meta">Provider: DataCamp</div>
+                <h4>Understanding Prompt Engineering</h4>
+                <p>Certificate focused on prompt design principles for improving reliability, structure, and performance of AI interactions.</p>
+                <div class="cert-meta">
+                  <span class="cert-badge"><i class="bi bi-building"></i> DataCamp</span>
+                  <span class="cert-badge"><i class="bi bi-calendar-event"></i> Feb 19, 2026</span>
+                </div>
+                <div class="cert-actions">
+                  <a class="btn-paper" href="assets/certificates/datacamp-understanding-prompt-engineering.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                </div>
               </article>
             </div>
+
             <div class="col-lg-4 col-md-6">
               <article class="certificate-card">
                 <i class="bi bi-patch-check-fill cert-icon"></i>
-                <h4>DataCamp Certificate 03</h4>
-                <p>Completed through DataCamp online learning platform.</p>
-                <div class="cert-meta">Provider: DataCamp</div>
+                <h4>Building Scalable Agentic Systems</h4>
+                <p>Training focused on scalable design patterns, orchestration, and practical implementation of agentic AI systems.</p>
+                <div class="cert-meta">
+                  <span class="cert-badge"><i class="bi bi-building"></i> DataCamp</span>
+                  <span class="cert-badge"><i class="bi bi-calendar-event"></i> Feb 21, 2026</span>
+                </div>
+                <div class="cert-actions">
+                  <a class="btn-paper" href="assets/certificates/datacamp-building-scalable-agentic-systems.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                </div>
               </article>
             </div>
+
             <div class="col-lg-6 col-md-6">
               <article class="certificate-card">
                 <i class="bi bi-patch-check-fill cert-icon"></i>
-                <h4>DataCamp Certificate 04</h4>
-                <p>Completed through DataCamp online learning platform.</p>
-                <div class="cert-meta">Provider: DataCamp</div>
+                <h4>Building AI Agents with Google ADK</h4>
+                <p>Practical course on developing AI agents using Google ADK and modern agent development workflows.</p>
+                <div class="cert-meta">
+                  <span class="cert-badge"><i class="bi bi-building"></i> DataCamp</span>
+                  <span class="cert-badge"><i class="bi bi-calendar-event"></i> Feb 22, 2026</span>
+                </div>
+                <div class="cert-actions">
+                  <a class="btn-paper" href="assets/certificates/datacamp-building-ai-agents-with-google-adk.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                </div>
               </article>
             </div>
+
             <div class="col-lg-6 col-md-6">
               <article class="certificate-card">
                 <i class="bi bi-patch-check-fill cert-icon"></i>
-                <h4>DataCamp Certificate 05</h4>
-                <p>Completed through DataCamp online learning platform.</p>
-                <div class="cert-meta">Provider: DataCamp</div>
+                <h4>Multi-Agent Systems with LangGraph</h4>
+                <p>Certificate centered on multi-agent orchestration, coordination, and workflow design using LangGraph.</p>
+                <div class="cert-meta">
+                  <span class="cert-badge"><i class="bi bi-building"></i> DataCamp</span>
+                  <span class="cert-badge"><i class="bi bi-calendar-event"></i> Feb 23, 2026</span>
+                </div>
+                <div class="cert-actions">
+                  <a class="btn-paper" href="assets/certificates/datacamp-multi-agent-systems-with-langgraph.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                </div>
               </article>
             </div>
           </div>
         </div>
 
-        <div id="amazon" class="platform-block mb-0">
+        <div id="aws" class="platform-block mb-0">
           <div class="platform-title">
-            <h3>Amazon</h3>
+            <h3>AWS</h3>
             <span class="platform-count">1 Certificate</span>
           </div>
+
           <div class="row g-4">
             <div class="col-lg-4 col-md-6">
               <article class="certificate-card">
                 <i class="bi bi-patch-check-fill cert-icon"></i>
-                <h4>Amazon Certificate 01</h4>
-                <p>Completed through Amazon training and certification track.</p>
-                <div class="cert-meta">Provider: Amazon</div>
+                <h4>AWS Certified AI Practitioner</h4>
+                <p>AWS certification validating foundational knowledge in AI, generative AI, responsible AI, and governance for AI solutions.</p>
+                <div class="cert-meta">
+                  <span class="cert-badge"><i class="bi bi-building"></i> AWS Training &amp; Certification</span>
+                  <span class="cert-badge"><i class="bi bi-calendar-event"></i> Mar 30, 2026</span>
+                </div>
+                <div class="cert-actions">
+                  <a class="btn-paper" href="assets/certificates/aws-certified-ai-practitioner.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                </div>
               </article>
             </div>
           </div>
         </div>
 
       </div>
-
-    </section><!-- /Certificates List -->
+    </section>
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
       <h3 class="sitename">Mostafa Habibi</h3>
-      <p>Continuous learning through verified certificates and practical upskilling programs.</p>
+      <p>Continuous learning through verified certificates and practical technical training.</p>
       <div class="social-links d-flex justify-content-center">
         <a href=""><i class="bi bi-twitter-x"></i></a>
         <a href=""><i class="bi bi-facebook"></i></a>
@@ -237,23 +421,15 @@
           <span>Copyright</span> <strong class="px-1 sitename">Mostafa Habibi</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -262,10 +438,7 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
