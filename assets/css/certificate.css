@@ -1,0 +1,102 @@
+.certificates-page .page-title {
+  background: linear-gradient(130deg, rgba(5, 87, 120, 0.08), rgba(18, 138, 116, 0.14));
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.certificates-overview .stats-card,
+.certificates-list .certificate-card {
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.certificates-overview .stats-card:hover,
+.certificates-list .certificate-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.1);
+}
+
+.certificates-overview .stats-card {
+  padding: 24px;
+  text-align: center;
+}
+
+.certificates-overview .stats-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.certificates-overview .stats-label {
+  font-size: 0.95rem;
+  color: color-mix(in srgb, var(--default-color), transparent 28%);
+  margin: 0;
+}
+
+.platform-block {
+  margin-bottom: 48px;
+}
+
+.platform-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.platform-title h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.platform-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent-color), white 80%);
+  color: var(--accent-color);
+  font-weight: 700;
+  padding: 0 14px;
+  font-size: 0.95rem;
+}
+
+.certificate-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.certificate-card .cert-icon {
+  font-size: 1.4rem;
+  color: var(--accent-color);
+}
+
+.certificate-card h4 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.certificate-card p {
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 0.92rem;
+}
+
+.certificate-card .cert-meta {
+  margin-top: auto;
+  padding-top: 6px;
+  font-size: 0.82rem;
+  color: color-mix(in srgb, var(--default-color), transparent 38%);
+}
