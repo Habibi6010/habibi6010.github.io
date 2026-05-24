@@ -49,14 +49,25 @@ Home · About · Research · Education · Experience · Skills · Awards · Serv
 
 ### Research Focus
 - Use existing `service-item` card style (colored left border, icon)
-- 4 cards, 2×2 grid on desktop
-- Content:
-  - **Healthcare AI** — patient monitoring, behavioral assessment, activity recognition, HOI detection
-  - **Computer Vision** — object detection, low-light vision, 3D localization, stereo/multi-camera, image enhancement
-  - **Agentic AI & LLMs** — RAG, multi-agent systems, FHIR data extraction, LangChain/LangGraph, prompt engineering
-  - **Sports Analytics** — kinematic analysis, posture classification, performance ranking, runner analysis
+- 5 cards in a responsive grid (3+2 on desktop, stacking on mobile)
 - Section title: "Research"
 - Section subtitle: one-line description of research identity
+- Card content (descriptive paragraphs, not keyword lists):
+
+  **Healthcare AI & Patient Monitoring**  
+  Designing AI-powered video-based monitoring systems for clinical environments. Research covers posture recognition, ambulation assessment, human–object interaction (HOI) detection, and behavioral analysis using multi-camera setups, 3D localization, and stereo vision. Systems integrate YOLO, MediaPipe, and monocular depth estimation to generate structured behavioral reports for caregivers — without wearables or manual annotation.
+
+  **Computer Vision & Image Understanding**  
+  Building end-to-end computer vision pipelines for detection, tracking, and scene understanding under real-world conditions. Areas include object detection in low-light environments (illumination-aware architectures), multi-camera tracking with epipolar geometry and triangulation, stereo vision, image enhancement, and deep learning-based feature reconstruction for MRI synthesis.
+
+  **Agentic AI, RAG & Multi-Agent Systems**  
+  Designing and implementing agentic AI systems where autonomous agents reason, plan, and act to complete complex tasks. Work includes Retrieval-Augmented Generation (RAG) pipelines that ground LLM outputs in domain-specific knowledge bases, multi-agent architectures with specialized roles (planner, extractor, auditor, formatter agents), structured data extraction from unstructured clinical narratives into FHIR-compliant formats, tool-calling workflows, and orchestration using LangChain, LangGraph, and n8n. Focus is on reliability, auditability, and schema-adaptive extraction at scale.
+
+  **ML Engineering & Model Development**  
+  End-to-end machine learning engineering: dataset design, feature engineering, model selection and training (PyTorch, scikit-learn), hyperparameter optimization, evaluation and benchmarking, and deployment. Covers classical ML (Random Forest, SVM, ART2 clustering, PCA) alongside deep learning architectures (YOLO, 3D U-Net, CNNs). Cloud deployment via AWS EC2, S3, Lambda, and API Gateway. Emphasis on reproducible experiments, model interpretability, and production-ready pipelines.
+
+  **Sports Analytics & Kinematic Analysis**  
+  Applying AI to athletic performance analysis. Includes running posture classification from video using MediaPipe landmark extraction, kinematic feature engineering (joint angles, stride frequency via FFT), performance ranking with ART2 neural clustering, and longitudinal trend analysis. Designed to give coaches quantitative, data-driven insights into technique and competitive trajectory.
 
 ### Education
 - Timeline/card layout (one card per degree)
@@ -125,6 +136,18 @@ M. Habibi, M. Nourani, [...] — IEEE VENUE, LOCATION, YEAR
 ## Changes to `certificate.html`
 
 - Fix empty social links in the footer (currently `href=""`) — replace with correct profile URLs matching the rest of the site
+
+---
+
+## Changes to Skills section (`index.html`)
+
+The existing Skills section has 8 cards. Two cards need richer descriptions (not keyword lists):
+
+**LLM & Agentic AI Systems card** — replace current text with:  
+"Building intelligent agentic systems that combine large language models with structured reasoning and tool use. This includes designing RAG pipelines that retrieve domain-specific knowledge to ground model outputs, orchestrating multi-agent workflows where specialized agents handle planning, extraction, auditing, and formatting, and implementing automation pipelines using LangChain, LangGraph, and n8n. Focus areas include prompt engineering for reliability, structured data extraction, and scalable agentic architectures for real-world deployment."
+
+**AI, Machine Learning & Computer Vision card** — add ML engineering context:  
+Append to existing description: "…and end-to-end ML engineering covering model development, training pipeline design, evaluation, optimization, and cloud deployment."
 
 ---
 
