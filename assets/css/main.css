@@ -1526,3 +1526,78 @@ section,
   font-size: 0.93rem;
   line-height: 1.65;
 }
+
+/*--------------------------------------------------------------
+# Education Section
+--------------------------------------------------------------*/
+.education .education-item {
+  background: var(--surface-color);
+  border-radius: 10px;
+  padding: 24px 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid var(--accent-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education .education-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+.education .education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.education .education-header h3 {
+  font-size: 1.15rem;
+  margin-bottom: 4px;
+  color: var(--heading-color);
+}
+
+.education .institution {
+  display: block;
+  color: var(--accent-color);
+  font-size: 0.94rem;
+  font-weight: 500;
+}
+
+.education .education-meta {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.education .edu-date {
+  display: block;
+  font-weight: 600;
+  color: var(--heading-color);
+  font-size: 0.9rem;
+}
+
+.education .edu-gpa {
+  display: block;
+  color: #666;
+  font-size: 0.88rem;
+  margin-top: 4px;
+}
+
+.education .education-body p {
+  margin-bottom: 6px;
+  font-size: 0.94rem;
+  color: var(--default-color);
+  line-height: 1.6;
+}
+
+@media (max-width: 576px) {
+  .education .education-header {
+    flex-direction: column;
+  }
+  .education .education-meta {
+    text-align: left;
+  }
+}
