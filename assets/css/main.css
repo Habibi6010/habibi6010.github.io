@@ -1695,3 +1695,30 @@ section,
 .prof-service .service-card ul li:last-child {
   border-bottom: none;
 }
+
+/*--------------------------------------------------------------
+# Paper Citation Style
+--------------------------------------------------------------*/
+.paper-citation {
+  font-size: 0.88rem;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.paper-citation strong {
+  font-style: normal;
+  color: var(--accent-color);
+}
+
+.paper-badge-status {
+  display: inline-block;
+  background: rgba(5, 99, 187, 0.08);
+  color: var(--accent-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
