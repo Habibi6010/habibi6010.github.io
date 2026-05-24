@@ -1518,3 +1518,11 @@ section,
     grid-template-columns: 1fr;
   }
 }
+
+/*--------------------------------------------------------------
+# Research Section
+--------------------------------------------------------------*/
+.research .service-item p {
+  font-size: 0.93rem;
+  line-height: 1.65;
+}
