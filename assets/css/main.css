@@ -1658,3 +1658,40 @@ section,
   color: var(--default-color);
   line-height: 1.65;
 }
+
+/*--------------------------------------------------------------
+# Professional Service Section
+--------------------------------------------------------------*/
+.prof-service .service-card {
+  background: var(--surface-color);
+  border-radius: 10px;
+  padding: 28px;
+  height: 100%;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+  border-top: 4px solid var(--accent-color);
+}
+
+.prof-service .service-card h4 {
+  font-size: 1.05rem;
+  color: var(--heading-color);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.prof-service .service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.prof-service .service-card ul li {
+  font-size: 0.94rem;
+  padding: 8px 0;
+  color: var(--default-color);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  line-height: 1.5;
+}
+
+.prof-service .service-card ul li:last-child {
+  border-bottom: none;
+}
