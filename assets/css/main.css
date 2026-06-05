@@ -470,7 +470,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -619,6 +619,14 @@ section,
   margin-right: 5px;
   color: var(--accent-color);
   line-height: 0;
+}
+
+.about .profile-img {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /*--------------------------------------------------------------
